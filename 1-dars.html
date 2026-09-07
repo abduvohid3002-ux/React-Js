@@ -6,40 +6,13 @@
   <body>
     <div class="js-container"></div>
 
-    <script src="https://unpkg.com/supersimpledev@3.2.1/external-library.js"></script>
-
     <script src="https://unpkg.com/supersimpledev/react.js"></script>
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-
-        const btn = <button> Salom! </button>
-        const paragraph = <p>React yordamida faqat bitta elementni render qilish mumkin.</p>
-
-        const productCost = 10 * 1 + 8 * 2;
-
-        console.log(productCost)
-        
-        const div = (
-            <div> 
-                <button> Salom! </button>
-                <p>
-                    text {productCost}
-                </p>
-                <div></div>
-            </div>
-        )
-
-        const container = document.querySelector('.js-container'); 
-        // Birinchi qator .js-container ni Jsga tanishtirish bo'ladi. 
-        ReactDOM.createRoot(container).render(div); 
-        // ReactDOM.createRoot() bu React orqali hosil qilingan buyruq hisoblanadi.
-        // va bu buyruq biz tanlagan elementni Reactning ildizi qilib belgilaydi
-        // Ma'lumki html kodimizning ildizi bu <html> tagi hisoblanadi.
-        // Lekin Reactning ildizi qilib belgilash bu shu elementni ichidagi barcha hosil qilingan elementlarni React tomonidan boshqarishni ta'minlaydi.
-        // render ham react tomonidan hosil qilingan kalit so'z hisoblanadi.
-        // renderning ma'nosi biror narsaning natijasini ko'rsatish.
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
     </script>
   </body>
 </html>
